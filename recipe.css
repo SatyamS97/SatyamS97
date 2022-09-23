@@ -1,0 +1,163 @@
+body{
+    background-color: rgb(0, 242, 255);
+}
+header{
+    background-image: linear-gradient(white,pink);
+    border-radius: 5px;
+    border-style:double;
+    border-width: 15px;
+    border-color: rgb(0, 242, 255);;
+}
+/* nav bar propeties logo and header name */
+header div{
+    width: 40%;
+    display: flex;
+    justify-content:center;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+/* main cnt or logo color and adjustment in shape */
+#main-cnt{
+    margin: 7px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+#main-cnt img{
+  margin-right: 10px;
+  height: 65px;
+  width: 70px;
+  border: solid 3px rgba(12, 217, 9, 0.859);
+  border-radius: 50%;
+  background-color: rgb(241, 5, 143);
+}
+#main-cnt h1{
+font-family: "Secular One", sans-serif;
+  font-size: 2.0rem;
+  margin-right: 10px;
+  color: rgb(255, 0, 0);
+}
+/* home/fav/about adjustment*/
+.menu {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    }
+    .menu li{
+      height: 80%;
+      margin-left: 40px;
+      display: flex;
+      padding: 0px 50px;
+      transition: background-color ease 0.3s;
+      justify-content: center;
+      align-items: center;
+      margin-left: 80px;
+    }
+    
+    .menu li:hover {
+      background-color: rgb(18, 189, 215);
+      border: solid 10px rgb(255, 0, 0);
+      border-radius: 20px;
+      border-style: groove;
+    }
+    
+    .menu li a {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: black;
+    }
+#container{
+    margin:50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* style external meal list(api meal list) */
+
+#meal-img-container{
+    width: 25%;
+}
+#meal-detail-container{
+    width: 55%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+#headings{
+    width:50%;
+}
+.detail-class{
+    margin-bottom:30px;
+}
+#ins{
+    width: 40%;
+}
+/* set external image size */
+#main-image img{
+    height:350px;
+    width:350px;
+    border-radius: 5%;
+    border: 20px solid rgb(234, 146, 146);
+    border-style:double;
+}
+
+/* Responsive design */
+@media screen and (max-width:1000px){
+    #headings{
+        width:100%;
+        margin-bottom: 20px;
+    }
+    #meal-img-container{
+        width:40%;
+    }
+    #meal-detail-container{
+        width:35%;
+    }
+    #ins{
+        width:100%;
+    }
+    #container{
+        width:90%;
+    }
+}
+/* Responsive design */
+@media screen and (max-width:700px){
+   
+    header div{
+        width:100%;
+    }
+    #meal-img-container{
+        width:70%;
+    }
+    #meal-detail-container{
+        width:70%;
+        margin-top:55px;
+    }
+    
+}
+
+@media screen and (max-width:400px){
+    header div{
+        display: block;
+        width:70%;
+        margin-left:auto;
+        height:130px;
+    }
+    #container{
+        margin:0px;
+        margin-top:50px;
+        width:100%;
+    }
+    #main-image{
+        margin:-30px;
+    }
+    #meal-detail-container{
+        width:90%;
+    }
+}

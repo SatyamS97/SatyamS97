@@ -1,0 +1,213 @@
+#slideshow {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 500vw; /* 300 x 4 */
+    position: relative;
+    -webkit-animation: slide 25s ease-in infinite;
+    -moz-animation: slide 25s ease infinite;
+    -ms-animation: slide 25s ease infinite;
+    -o-animation: slide 25s ease infinite;
+    animation: slide 25s ease infinite;
+  }
+  
+  .container section {
+    width: 100vw;
+    height: 60vh;
+    float: left;
+  }
+  
+  .container section:nth-child(1) {
+    background: linear-gradient(
+        177deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url(https://images.pexels.com/photos/326279/pexels-photo-326279.jpeg?cs=srgb&dl=pexels-pixabay-326279.jpg&fm=jpg);
+    background-size: cover;
+  }
+  .container section:nth-child(2) {
+    background: linear-gradient(
+        177deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url(https://images.pexels.com/photos/674574/pexels-photo-674574.jpeg?cs=srgb&dl=pexels-cats-coming-674574.jpg&fm=jpg);
+    background-size: cover;
+  }
+  .container section:nth-child(3) {
+    background: linear-gradient(
+        177deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url(https://cdn.pixabay.com/photo/2017/01/30/13/49/pancakes-2020863_960_720.jpg);
+    background-size: cover;
+  }
+  .container section:nth-child(4) {
+    background: linear-gradient(
+        177deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url(https://images.pexels.com/photos/1152237/pexels-photo-1152237.jpeg?cs=srgb&dl=pexels-lisa-fotios-1152237.jpg&fm=jpg);
+    background-size: cover;
+  }
+  .container section:nth-child(5) {
+    background: linear-gradient(
+        177deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url(https://cdn.pixabay.com/photo/2014/08/14/14/21/shish-kebab-417994_960_720.jpg);
+  
+    background-size: cover;
+  }
+  @-webkit-keyframes slide {
+    0% {
+      left: 0;
+    }
+    12.5% {
+      left: -100vw;
+    }
+    25% {
+      left: -200vw;
+    }
+    37.5% {
+      left: -300vw;
+    }
+    50% {
+      left: -400vw;
+    }
+    62.5% {
+      left: -300vw;
+    }
+    75% {
+      left: -200vw;
+    }
+    87.5% {
+      left: -100vw;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  @-moz-keyframes slide {
+    0% {
+      left: 0;
+    }
+    12.5% {
+      left: -100vw;
+    }
+    25% {
+      left: -200vw;
+    }
+    37.5% {
+      left: -300vw;
+    }
+    50% {
+      left: -400vw;
+    }
+    62.5% {
+      left: -300vw;
+    }
+    75% {
+      left: -200vw;
+    }
+    87.5% {
+      left: -100vw;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  @-ms-keyframes slide {
+    0% {
+      left: 0;
+    }
+    12.5% {
+      left: -100vw;
+    }
+    25% {
+      left: -200vw;
+    }
+    37.5% {
+      left: -300vw;
+    }
+    50% {
+      left: -400vw;
+    }
+    62.5% {
+      left: -300vw;
+    }
+    75% {
+      left: -200vw;
+    }
+    87.5% {
+      left: -100vw;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  @-o-keyframes slide {
+    0% {
+      left: 0;
+    }
+    12.5% {
+      left: -100vw;
+    }
+    25% {
+      left: -200vw;
+    }
+    37.5% {
+      left: -300vw;
+    }
+    50% {
+      left: -400vw;
+    }
+    62.5% {
+      left: -300vw;
+    }
+    75% {
+      left: -200vw;
+    }
+    87.5% {
+      left: -100vw;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  @keyframes slide {
+    0% {
+      left: 0;
+    }
+    12.5% {
+      left: -100vw;
+    }
+    25% {
+      left: -200vw;
+    }
+    37.5% {
+      left: -300vw;
+    }
+    50% {
+      left: -400vw;
+    }
+    62.5% {
+      left: -300vw;
+    }
+    75% {
+      left: -200vw;
+    }
+    87.5% {
+      left: -100vw;
+    }
+    100% {
+      left: 0;
+    }
+  }

@@ -1,0 +1,206 @@
+body{
+    background-color: rgb(116, 155, 166);
+}
+/* nav bar background color */
+header{
+    background-image: linear-gradient(white,pink);
+    border-radius: 5px;
+    border-style: double;
+    border-width: 15px;
+    border-color:rgb(116, 155, 166); ;
+}
+header div{
+    width: 40%;
+    display: flex;
+    justify-content:center;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* main cnt or logo color and adjustment in shape */
+#main-cnt{
+    margin: 7px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+#main-cnt img{
+  margin-right: 10px;
+  height: 65px;
+  width: 70px;
+  border: solid 3px rgba(12, 217, 9, 0.859);
+  border-radius: 50%;
+  background-color: rgb(241, 5, 143);
+}
+#main-cnt h1{
+font-family: "Secular One", sans-serif;
+  font-size: 2.0rem;
+  margin-right: 10px;
+  color: rgb(255, 0, 0);
+}
+/* home/fav/about adjustment*/
+.menu {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  }
+  .menu li{
+    height: 80%;
+    margin-left: 40px;
+    display: flex;
+    padding: 0px 30px;
+    transition: background-color ease 0.3s;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+  }
+  
+  .menu li:hover {
+    background-color: rgb(18, 189, 215);
+    border: solid 10px rgb(255, 0, 0);
+    border-radius: 20px;
+    border-style: groove;
+  }
+  
+  .menu li a {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+  }
+#take-srch{
+    text-align: center;
+}
+/* search bar properties */
+input{
+   width: 50%;
+   height: 3rem;
+   margin-top: 25px;
+   border-radius: 30px;
+   border: 5px solid rgba(250, 5, 181, 0.727);
+   text-align: center;
+   font-size: 1.5rem;
+   border-style:double;
+
+}
+#search-bar{
+    color: black;
+}
+/* search button */
+#search-btn{
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 0.8rem;
+    color: blue;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#search-btn:hover{
+    border: 2px solid white;
+    background-color: palevioletred;
+    color: white;
+}
+#impt{
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    color: rgb(5, 5, 5);
+}
+/* style external meal list(api meal list) */
+#meals-list{
+    margin:70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    padding: 10px;
+    width: 25%;
+}
+.meal h2{
+    text-align: center;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+/* set external image size */
+li img{
+    margin-left: 30px;
+    height: 250px;
+    width: 250px;
+    border-radius: 30%;
+    border: 10px solid lightgray;
+    border-style:double;
+    cursor: pointer;
+}
+
+
+.meal-name{
+    display: flex;
+    border: 7px solid rgb(237, 236, 244);
+    border-style:groove;
+    border-radius: 15px;
+}
+
+.meal-name i{
+    font-size: 2rem;
+    margin-top:17px;
+    margin-left: 70px;
+    margin-right: 70px;
+    cursor: pointer;
+}
+/* icon inner color when click on icon  */
+.fas{
+    color:red;
+}
+
+@media screen and (max-width:900px){
+    li{
+        width:45%;
+        margin-bottom: 5px;
+    }
+}
+/* Responsive design */
+@media screen and (max-width:600px){
+    li{
+        width:75%;
+        margin-bottom: 5px;
+        margin-left: 30px;
+    }
+    header div{
+        width:100%;
+    }
+    #meals-list{
+        margin: 30px;
+        display: flex;     
+    }
+}
+
+@media screen and (max-width:400px){
+    #meals-list{
+        margin: 0px;    
+    }
+    li{
+        margin:0px;
+        margin-bottom:10px ;
+    }
+    header div{
+        display: block;
+        width:70%;
+        margin-left:auto;
+        height:130px;
+       
+    }
+    input{
+        width:80%;
+        margin-top:35px;
+        margin-bottom: 15px;
+    }
+}
