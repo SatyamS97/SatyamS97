@@ -2,20 +2,6 @@ let queryString = window.location.search;
 let urlParams = new URLSearchParams(queryString);
 let recipeId=urlParams.get('id');
 
-
-//getiing details from api 
-const getDetails=async (recipeId)=>{
-    try{
-        const res=await fetch(`https:www.themealdb.com/api/json/v1/1/lookup.php?i=${recipeId}`);
-        const data=await res.json()
-        console.log(data);
-        showDetails(data);
-    }catch(err){
-        console.error(err);
-    }
-}
-
-//adding details on dom
 const showDetails=(meal)=>{
     const photo=document.getElementById("main-image");
     photo.innerHTML=`<img src=${meal.meals[0].strMealThumb}>`;
@@ -30,5 +16,19 @@ const showDetails=(meal)=>{
 
 }
 
+
+//getiing details from api 
+const getDetails=async (recipeId)=>{
+    try{
+        const res=await fetch(`https:www.themealdb.com/api/json/v1/1/lookup.php?i=${recipeId}`);
+        const data=await res.json()
+        console.log(data);
+        showDetails(data);
+    }catch(err){
+        console.error(err);
+    }
+}
+
+//adding details on dom
+
 getDetails(recipeId)
-////www.themealdb.com/api/json/v1/1/lookup.php?i
