@@ -22,10 +22,12 @@ const getDetails=async (recipeId)=>{
     try{
         const res=await fetch(`https:www.themealdb.com/api/json/v1/1/lookup.php?i=${recipeId}`);
         const data=await res.json()
+        consple.log ("hellotry");
         console.log(data);
         showDetails(data);
     }catch(err){
-        console.error(err);
+        //console.error(err);
+        console.log ("hellocatch");
     }
 }
 
